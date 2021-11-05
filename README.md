@@ -1,4 +1,4 @@
-# NicolleVitoria_ProjetoPA
+# NicolleVitoria_MealPlanner
 **Proposta de projeto:** ferramenta que auxilia no planejamneto de refeições e de compras para a manutenção de dietas baseadas na contabilização de macronutrientes ingeridos diariamente. 
 
 **Motivação:** muitas pessoas justificam a não adesão a dietas pela dificuldade em se planejar para preparar refeições e comprar alimentos para variar o cardápio sem sair da dieta.
