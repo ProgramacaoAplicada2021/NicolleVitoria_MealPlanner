@@ -20,6 +20,10 @@ public class Refeicao implements Serializable {
         this.hortB = hortB;
     }
 
+    public Refeicao() {
+
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -72,5 +76,9 @@ public class Refeicao implements Serializable {
 
     public int getId() {
         return id;
+    }
+
+    public boolean temIdValido() {
+        return id > 0;
     }
 }

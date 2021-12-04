@@ -1,9 +1,10 @@
 package com.example.mealplanner.ui.activity;
 
+import static com.example.mealplanner.ui.activity.ConstantesActivities.CHAVE_REFEICAO;
+
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -14,11 +15,10 @@ import com.example.mealplanner.R;
 import com.example.mealplanner.model.Refeicao;
 import com.example.mealplanner.DAO.RefeicaoDAO;
 
-import java.io.Serializable;
-
 public class AlimentosRefeicaoActivity extends AppCompatActivity {
 
-    public static final String TITULO_APP_BAR = "Nova Refeiçao";
+    public static final String TITULO_APP_BAR_NOVA_REFEICAO = "Nova Refeição";
+    private static final String TITULO_APP_BAR_EDITA_REFEICAO = "Edita Refeição";
     private EditText campoNome;
     private EditText campoPtn;
     private EditText campoCarbo;
@@ -31,14 +31,24 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alimentos_refeicao);
-        setTitle(TITULO_APP_BAR);
         inicializacaoDosCampos(); //onde entra cada atributo
         configuraBotaoSalvar();
+        carregaRefeicao();
+    }
 
+    private void carregaRefeicao() {
         Intent dados = getIntent();
-        //Serializable refeicao = dados.getSerializableExtra("refeicao");
-        // usando cast
-        refeicao = (Refeicao) dados.getSerializableExtra("refeicao");
+        if (dados.hasExtra(CHAVE_REFEICAO)) {
+            setTitle(TITULO_APP_BAR_EDITA_REFEICAO);
+            refeicao = (Refeicao) dados.getSerializableExtra(CHAVE_REFEICAO);
+            preencheCampos();
+        } else {
+            setTitle(TITULO_APP_BAR_NOVA_REFEICAO);
+            refeicao = new Refeicao();
+        }
+    }
+
+    private void preencheCampos() {
         campoNome.setText(refeicao.getNome()); //da pau na hora do floating button
         campoPtn.setText(refeicao.getPtn());
         campoCarbo.setText(refeicao.getCarbo());
@@ -53,11 +63,21 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Refeicao refeicaoCriada = preencheRefeicao();
 //                salva(refeicaoCriada);
-                preencheRefeicao();
-                dao.edita(refeicao);
+                finalizaFormulario();
             }
 
         });
+    }
+
+
+    private void finalizaFormulario() {
+        preencheRefeicao();
+        if (refeicao.temIdValido()) {
+            dao.edita(refeicao);
+        } else {
+            dao.salva(refeicao);
+        }
+        finish();
     }
 
     private void inicializacaoDosCampos() {
