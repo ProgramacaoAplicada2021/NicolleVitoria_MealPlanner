@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/activity_formulario_refeicao_nome"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:hint="Refeição"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/activity_formulario_refeicao_ptn"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:hint="Proteína"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+
+    <EditText android:id="@+id/activity_formulario_refeicao_carb"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:hint="Carboidrato"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+
+    <EditText android:id="@+id/activity_formulario_refeicao_hortA"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:hint="Hotaliça A"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+
+    <EditText android:id="@+id/activity_formulario_refeicao_hortB"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:hint="Hortaliça B"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/activity_formulario_refeicao_botao_salvar"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:text="Salvar"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
