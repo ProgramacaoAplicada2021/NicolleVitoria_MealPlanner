@@ -8,27 +8,35 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.mealplanner.ui.adapter.ListaRefeicoesAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.ContextMenu;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.example.mealplanner.DAO.RefeicaoDAO;
 import com.example.mealplanner.R;
 import com.example.mealplanner.model.Refeicao;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class ListaRefeicoesActivity extends AppCompatActivity {
 
     public static final String TITULO_APPBAR = "Cardapio";
     private final RefeicaoDAO dao = new RefeicaoDAO();
-    private ArrayAdapter<Refeicao> adapter;
+    private ListaRefeicoesAdapter adapter;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,8 +45,8 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         configuraFabNovaRefeicao();
         configuraListaRefeicoes();
-        //dao.salva(new Refeicao("almoco", "carne", "arroz", "salada", "cenoura"));
-        //dao.salva(new Refeicao("janta", "carne", "arroz", "salada", "cenoura"));
+        dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura"));
+        dao.salva(new Refeicao("janta", "20h", "carne", "arroz", "salada", "cenoura"));
     }
 
 
@@ -128,9 +136,8 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
     }
 
     private void configuraAdapter(ListView listaDeRefeicoes) {
-        adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1);
+
+        adapter = new ListaRefeicoesAdapter(this);
         listaDeRefeicoes.setAdapter(adapter);
     }
 }

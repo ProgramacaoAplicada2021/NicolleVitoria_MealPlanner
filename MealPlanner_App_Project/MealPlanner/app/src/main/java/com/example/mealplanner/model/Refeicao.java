@@ -15,6 +15,7 @@ public class Refeicao implements Serializable {
 
     public Refeicao(String nome, String hora, String ptn, String carbo, String hortA, String hortB) {
         this.nome = nome;
+        this.hora = hora;
         this.ptn = ptn;
         this.carbo = carbo;
         this.hortA = hortA;
@@ -31,19 +32,15 @@ public class Refeicao implements Serializable {
     public void setHora(String hora) {
         this.hora = hora;
     }
-
     public void setPtn(String ptn) {
         this.ptn = ptn;
     }
-
     public void setCarbo(String carbo) {
         this.carbo = carbo;
     }
-
     public void setHortA(String hortA) {
         this.hortA = hortA;
     }
-
     public void setHortB(String hortB) {
         this.hortB = hortB;
     }
