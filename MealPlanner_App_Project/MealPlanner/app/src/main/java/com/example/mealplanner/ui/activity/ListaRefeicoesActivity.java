@@ -37,21 +37,25 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         configuraFabNovaRefeicao();
         configuraListaRefeicoes();
-        dao.salva(new Refeicao("almoco", "carne", "arroz", "salada", "cenoura"));
-        dao.salva(new Refeicao("janta", "carne", "arroz", "salada", "cenoura"));
+        //dao.salva(new Refeicao("almoco", "carne", "arroz", "salada", "cenoura"));
+        //dao.salva(new Refeicao("janta", "carne", "arroz", "salada", "cenoura"));
     }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        menu.add("Remover");
+        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_menu, menu); //menu.add("Remover");
     }
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-        Refeicao refeicaoEscolhida = adapter.getItem(menuInfo.position);
-        remove(refeicaoEscolhida);
+        int itemId = item.getItemId();
+        if (itemId == R.id.activity_lista_alunos_menu_remover) {
+            AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+            Refeicao refeicaoEscolhida = adapter.getItem(menuInfo.position);
+            remove(refeicaoEscolhida);
+        }
         return super.onContextItemSelected(item);
     }
 

@@ -7,12 +7,13 @@ import java.io.Serializable;
 public class Refeicao implements Serializable {
     private int id=0;
     private  String nome;
+    private String hora;
     private  String ptn;
     private  String carbo;
     private  String hortA;
     private  String hortB;
 
-    public Refeicao(String nome, String ptn, String carbo, String hortA, String hortB) {
+    public Refeicao(String nome, String hora, String ptn, String carbo, String hortA, String hortB) {
         this.nome = nome;
         this.ptn = ptn;
         this.carbo = carbo;
@@ -26,6 +27,9 @@ public class Refeicao implements Serializable {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public void setHora(String hora) {
+        this.hora = hora;
     }
 
     public void setPtn(String ptn) {
@@ -47,6 +51,9 @@ public class Refeicao implements Serializable {
     public String getNome() {
         return nome;
     }
+    public String getHora() {
+        return hora;
+    }
 
     public String getPtn() {
         return ptn;
@@ -67,7 +74,7 @@ public class Refeicao implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return nome;
+        return nome + " - " + hora;
     }
 
     public void setId(int id) {
