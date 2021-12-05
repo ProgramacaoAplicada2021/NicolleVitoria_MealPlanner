@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MealPlanner">
         <activity
+            android:name=".ui.activity.HortBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.HortAActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CarboActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ProteinaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.SubstituicoesActivity"
             android:exported="false" />
         <activity android:name=".ui.activity.AlimentosRefeicaoActivity" />

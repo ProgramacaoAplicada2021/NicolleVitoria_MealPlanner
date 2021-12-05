@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HortBActivity">
+
+    <TextView
+        android:id="@+id/texfdtView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Almôndega \n
+Atum em lata  \n
+Bacalhau \n
+Bife / bife de soja \n
+Bife de peru \n
+Camarão \n \n
+Carne assada \n
+Carne bovina moída\n
+Carne seca \n
+Coração de galinha \n
+Costela suína \n
+Coxa de peru \n
+Coxa de frango \n
+Frango desfiado \n
+Lula \n
+Ovo de codorna \n
+Ovo de galinha \n
+Panqueca de frango/carne \n
+Peito de frango\n
+Peixe \n
+Picadinho \n
+Picanha / rosbife \n
+Salmão / atum \n
+Sashimi \n
+Tofu \n"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:text="4 unidades (120g) \n
+1 lata \n
+5 csp (130g) \n
+1 unidade (120g) \n
+1 unidade (200g) \n
+3 colheres gde. / 8 unid. méd. \n
+2 fatias (120g) \n
+4 csp (120g) \n
+3 csp \n
+25 unidades \n
+2 pedaços (100g) \n
+2 unidades gde. \n
+2 unidades (160g) \n
+8 csp (200g)
+ \n8 unidades
+ \n15 unidades
+ \n3 unidades
+ \n1 unidade gde.\n
+ \n1/2 unidade (180g)
+ \n2 filés / postas
+ \n4 csp (120g)
+ \n4 fatias finas (120g)
+ \n1 filé / posta (130g)
+ \n15 peças
+ \n250g" />
+</LinearLayout>

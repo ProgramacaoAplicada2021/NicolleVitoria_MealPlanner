@@ -7,14 +7,24 @@
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable/ic_nova_ref.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_alimentos_refeicao.xml" value="0.22" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_carbo.xml" value="0.2" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_a.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_aactivity.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_b.xml" value="0.1" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_b_activity.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_login2.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_proteina.xml" value="0.1" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_substituicoes.xml" value="0.13243243243243244" />
-        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/item_refeicao.xml" value="0.1" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/item_refeicao.xml" value="0.22" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_alimentos_refeicao_menu.xml" value="0.1" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_carbo_menu.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_hortA_menu.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_hortB_menu.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_lista_de_refeicoes2.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_lista_de_refeicoes_menu.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_lista_de_refeicoes_substituicao.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_proteina_menu.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/menu/activity_substituicao_menu.xml" value="0.13243243243243244" />
       </map>
     </option>

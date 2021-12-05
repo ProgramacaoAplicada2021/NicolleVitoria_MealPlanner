@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.HortBActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="210dp"
+        android:text="Aipim cozido"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="210dp"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Arroz cozido"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="6 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Batata baroa cozida"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Batata doce cozida"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Batata inglesa cozida"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Cuzcuz"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Macarrão cozido"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="Inhame cozido"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="4 colheres de sopa (120g)"
+        android:textAlignment="center" />
+</LinearLayout>

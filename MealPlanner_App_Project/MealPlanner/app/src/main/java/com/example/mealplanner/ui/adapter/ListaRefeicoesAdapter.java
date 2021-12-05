@@ -42,7 +42,7 @@ public class ListaRefeicoesAdapter extends BaseAdapter {
                 .inflate(R.layout.item_refeicao, viewGroup, false);
         Refeicao refeicaoCriada = refeicoes.get(i);
         TextView nome = viewCriada.findViewById(R.id.item_refeicao_nome);
-        nome.setText(refeicaoCriada.getHora()+ "h: " +refeicaoCriada.getNome());
+        nome.setText(refeicaoCriada.getHora()+ " h : " +refeicaoCriada.getNome());
         //nome.setText(refeicaoCriada.toString());
 //        TextView hora = viewCriada.findViewById(R.id.item_refeicao_hora);
 //        hora.setText(refeicaoCriada.getHora());

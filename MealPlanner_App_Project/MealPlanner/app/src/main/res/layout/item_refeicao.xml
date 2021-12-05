@@ -9,8 +9,10 @@
     android:id="@+id/item_refeicao_nome"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="25sp"
-    android:textStyle="bold"
+    android:textSize="26sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+
     tools:text="Almoco"/>
 <!--    <TextView-->
 <!--        android:id="@+id/item_refeicao_hora"-->
@@ -26,36 +28,36 @@
         android:id="@+id/item_refeicao_ptn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
         tools:text="frango - "/>
     <TextView
         android:id="@+id/item_refeicao_carbo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
         tools:text="arroz - "/>
     <TextView
         android:id="@+id/item_refeicao_hortA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
         tools:text="alface - "/>
     <TextView
         android:id="@+id/item_refeicao_hortB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
         tools:text="cenoura - "/>
 </LinearLayout>

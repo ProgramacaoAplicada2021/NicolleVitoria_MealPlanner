@@ -4,33 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
     android:orientation="vertical"
     tools:context=".ui.activity.SubstituicoesActivity">
 
     <Button
         android:id="@+id/botao_ptn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="396dp"
+        android:layout_height="70dp"
         android:layout_weight="1"
-        android:text="Proteína" />
+        android:text="Proteína"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/botao_carbo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_weight="1"
-        android:text="Carboidrato" />
+        android:text="Carboidrato"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/botao_hortA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_weight="1"
         android:text="Hortaliça A" />
+
     <Button
         android:id="@+id/botao_hortB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_weight="1"
         android:text="Hortaliça B" />
 </LinearLayout>

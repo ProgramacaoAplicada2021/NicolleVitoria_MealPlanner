@@ -34,7 +34,7 @@ import java.util.List;
 
 public class ListaRefeicoesActivity extends AppCompatActivity {
 
-    public static final String TITULO_APPBAR = "Cardapio";
+    public static final String TITULO_APPBAR = "Minhas refeições";
     private final RefeicaoDAO dao = new RefeicaoDAO();
     private ListaRefeicoesAdapter adapter;
 
@@ -46,7 +46,7 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         configuraFabNovaRefeicao();
         configuraListaRefeicoes();
-        dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura", "carne", "arroz", "salada", "cenoura"));
+        //dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura", "carne", "arroz", "salada", "cenoura"));
         //dao.salva(new Refeicao("janta", "20h", "carne", "arroz", "salada", "cenoura"));
     }
 
@@ -117,17 +117,6 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
 
     }
 
-//    private void configuraListenerDeClickLongoPorItem(ListView listaDeRefeicoes) {
-//        listaDeRefeicoes.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int posicao, long id) {
-//               // Log.i("clicklongo", String.valueOf((posicao)));
-//                Refeicao refeicaoEscolhida = (Refeicao) adapterView.getItemAtPosition(posicao);
-//                remove(refeicaoEscolhida);
-//                return true;
-//            }
-//        });
-//    }
 
     private void remove(Refeicao refeicao) {
         dao.remove(refeicao);

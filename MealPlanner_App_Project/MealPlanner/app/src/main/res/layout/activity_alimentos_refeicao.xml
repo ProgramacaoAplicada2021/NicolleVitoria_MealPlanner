@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Horário"
+            android:hint="Horário (XX:XX)"
             android:inputType="time" />
 
         <EditText
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Qtd Proteína"
+            android:hint="Qtd Proteína (g)"
             android:inputType="text" />
 
         <EditText
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Qtd Carboidrato"
+            android:hint="Qtd Carboidrato (g)"
             android:inputType="text" />
 
         <EditText
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:hint="Hotaliça A"
-            android:inputType="text" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/activity_formulario_refeicao_hortB"
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Qtd Hortaliça B"
+            android:hint="Qtd Hortaliça B (g)"
             android:inputType="text" />
 
 <!--        <Button-->

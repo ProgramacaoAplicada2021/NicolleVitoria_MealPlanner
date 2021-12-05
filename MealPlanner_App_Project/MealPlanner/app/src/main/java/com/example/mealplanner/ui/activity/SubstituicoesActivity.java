@@ -1,14 +1,14 @@
 package com.example.mealplanner.ui.activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mealplanner.R;
 
@@ -18,7 +18,13 @@ public class SubstituicoesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_substituicoes);
+        configuraBotaoPtn();
+        configuraBotaoCarbo();
+        configuraBotaoHortA();
+        configuraBotaoHortB();
+        setTitle("Substituições");
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_substituicao_menu, menu);
@@ -34,47 +40,45 @@ public class SubstituicoesActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-//        Button botaoPtn = findViewById(R.id.botao_ptn);
-//        botaoPtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(SubstituicoesActivity.this, ProteinaActivity.class));
-//            }
-//        });
-
-
-    //        Button botaoCarbo = findViewById(R.id.botao_carbo);
-//        botaoCarbo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(SubstituicoesActivity.this, CarboidratoActivity.class));
-//            }
-//        });
-
-
-
-    //        Button botaoHortA = findViewById(R.id.botao_hortA);
-//        botaoHortA.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(SubstituicoesActivity.this, HortAActivity.class));
-//            }
-//        });
-
-
-    //        Button botaoHortB = findViewById(R.id.botao_hortB);
-//        botaoHortB.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(SubstituicoesActivity.this, HortBActivity.class));
-//            }
-//        });
-
-
-
-
-
+    private void configuraBotaoPtn() {
+        Button botaoPtn = findViewById(R.id.botao_ptn);
+        botaoPtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SubstituicoesActivity.this, ProteinaActivity.class));
+            }
+        });
     }
+
+    private void configuraBotaoCarbo() {
+        Button botaoPtn = findViewById(R.id.botao_carbo);
+        botaoPtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SubstituicoesActivity.this, CarboActivity.class));
+            }
+        });
+    }
+    private void configuraBotaoHortA() {
+        Button botaoPtn = findViewById(R.id.botao_hortA);
+        botaoPtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SubstituicoesActivity.this,HortAActivity.class));
+            }
+        });
+    }
+
+    private void configuraBotaoHortB() {
+        Button botaoPtn = findViewById(R.id.botao_hortB);
+        botaoPtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SubstituicoesActivity.this,HortBActivity.class));
+            }
+        });
+    }
+
+
+}
 
