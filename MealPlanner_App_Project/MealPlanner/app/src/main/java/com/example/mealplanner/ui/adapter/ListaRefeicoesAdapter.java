@@ -42,17 +42,18 @@ public class ListaRefeicoesAdapter extends BaseAdapter {
                 .inflate(R.layout.item_refeicao, viewGroup, false);
         Refeicao refeicaoCriada = refeicoes.get(i);
         TextView nome = viewCriada.findViewById(R.id.item_refeicao_nome);
-        nome.setText(refeicaoCriada.getNome());
-        TextView hora = viewCriada.findViewById(R.id.item_refeicao_hora);
-        hora.setText(refeicaoCriada.getHora());
+        nome.setText(refeicaoCriada.getHora()+ "h: " +refeicaoCriada.getNome());
+        //nome.setText(refeicaoCriada.toString());
+//        TextView hora = viewCriada.findViewById(R.id.item_refeicao_hora);
+//        hora.setText(refeicaoCriada.getHora());
         TextView ptn = viewCriada.findViewById(R.id.item_refeicao_ptn);
-        ptn.setText(refeicaoCriada.getPtn());
+        ptn.setText(refeicaoCriada.getPtnP()+ " g de " +refeicaoCriada.getPtn());
         TextView carbo = viewCriada.findViewById(R.id.item_refeicao_carbo);
-        carbo.setText(refeicaoCriada.getCarbo());
+        carbo.setText(refeicaoCriada.getCarboP()+ " g de " +refeicaoCriada.getCarbo());
         TextView hortA = viewCriada.findViewById(R.id.item_refeicao_hortA);
         hortA.setText(refeicaoCriada.getHortA());
         TextView hortB = viewCriada.findViewById(R.id.item_refeicao_hortB);
-        hortB.setText(refeicaoCriada.getHortB());
+        hortB.setText(refeicaoCriada.getHortBP()+ " g de " +refeicaoCriada.getHortBP());
 
         return viewCriada;
     }

@@ -12,14 +12,24 @@ public class Refeicao implements Serializable {
     private  String carbo;
     private  String hortA;
     private  String hortB;
+    private String ptnP;
+    private  String carboP;
+    private  String hortAP;
+    private  String hortBP;
 
-    public Refeicao(String nome, String hora, String ptn, String carbo, String hortA, String hortB) {
+
+    public Refeicao(String nome, String hora, String ptn, String carbo, String hortA, String hortB,
+                    String ptnP, String carboP, String hortAP, String hortBP) {
         this.nome = nome;
         this.hora = hora;
         this.ptn = ptn;
         this.carbo = carbo;
         this.hortA = hortA;
         this.hortB = hortB;
+        this.ptnP = ptnP;
+        this.carboP = carboP;
+        this.hortAP = hortAP; //NAO EH NECESSARIO
+        this.hortBP = hortBP;
     }
 
     public Refeicao() {
@@ -44,6 +54,15 @@ public class Refeicao implements Serializable {
     public void setHortB(String hortB) {
         this.hortB = hortB;
     }
+    public void setPtnP(String ptnP) {
+        this.ptnP = ptnP;
+    }
+    public void setCarboP(String carboP) {
+        this.carboP = carboP;
+    }
+    public void setHortBP(String hortBP) {
+        this.hortBP = hortBP;
+    }
 
     public String getNome() {
         return nome;
@@ -66,6 +85,22 @@ public class Refeicao implements Serializable {
 
     public String getHortB() {
         return hortB;
+    }
+
+    public String getPtnP() { //P DE PORÇAO
+        return ptnP;
+    }
+
+    public String getCarboP() {
+        return carboP;
+    }
+
+    public String getHortAP() {
+        return hortAP;
+    }
+
+    public String getHortBP() {
+        return hortBP;
     }
 
     @NonNull

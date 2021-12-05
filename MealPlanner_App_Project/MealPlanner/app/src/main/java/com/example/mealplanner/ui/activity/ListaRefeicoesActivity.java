@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,8 +46,8 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         configuraFabNovaRefeicao();
         configuraListaRefeicoes();
-        dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura"));
-        dao.salva(new Refeicao("janta", "20h", "carne", "arroz", "salada", "cenoura"));
+        dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura", "carne", "arroz", "salada", "cenoura"));
+        //dao.salva(new Refeicao("janta", "20h", "carne", "arroz", "salada", "cenoura"));
     }
 
 
@@ -65,6 +66,21 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
             remove(refeicaoEscolhida);
         }
         return super.onContextItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_substituicao, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.activity_lista_de_refeicoes_substituicao) {
+            startActivity(new Intent(this, SubstituicoesActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void configuraFabNovaRefeicao() {

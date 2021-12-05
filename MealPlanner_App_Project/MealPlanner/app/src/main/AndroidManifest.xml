@@ -10,16 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MealPlanner">
         <activity
-            android:name=".ui.activity.AlimentosRefeicaoActivity"/>
-          />/  android:exported="true"/>    // equivalente ao formulario do video
-            <!-- <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-
+            android:name=".ui.activity.SubstituicoesActivity"
+            android:exported="false" />
+        <activity android:name=".ui.activity.AlimentosRefeicaoActivity" />
         <activity
             android:name=".ui.activity.ListaRefeicoesActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

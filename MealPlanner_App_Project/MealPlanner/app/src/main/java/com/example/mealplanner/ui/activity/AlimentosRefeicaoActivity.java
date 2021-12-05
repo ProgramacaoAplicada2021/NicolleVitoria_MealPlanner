@@ -28,8 +28,12 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
     private EditText campoCarbo;
     private EditText campoHortA;
     private EditText campoHortB;
+    private EditText campoPtnP;
+    private EditText campoCarboP;
+    private EditText campoHortBP;
     private final RefeicaoDAO dao = new RefeicaoDAO();
     private Refeicao refeicao;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +64,7 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
         if (dados.hasExtra(CHAVE_REFEICAO)) {
             setTitle(TITULO_APP_BAR_EDITA_REFEICAO);
             refeicao = (Refeicao) dados.getSerializableExtra(CHAVE_REFEICAO);
-            preencheCampos();
+            preencheCampos(); //preenche os campos com o que ja foi inserido
         } else {
             setTitle(TITULO_APP_BAR_NOVA_REFEICAO);
             refeicao = new Refeicao();
@@ -103,6 +107,9 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
         campoCarbo = findViewById(R.id.activity_formulario_refeicao_carb);
         campoHortA = findViewById(R.id.activity_formulario_refeicao_hortA);
         campoHortB = findViewById(R.id.activity_formulario_refeicao_hortB);
+        campoPtnP = findViewById(R.id.activity_formulario_refeicao_ptnP);
+        campoCarboP = findViewById(R.id.activity_formulario_refeicao_carboP);
+        campoHortBP = findViewById(R.id.activity_formulario_refeicao_hortBP);
     }
 
     private void salva(Refeicao refeicao) {
@@ -117,12 +124,18 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
         String carbo = campoCarbo.getText().toString();
         String hortA = campoHortA.getText().toString();
         String hortB = campoHortB.getText().toString();
+        String ptnP = campoPtnP.getText().toString();
+        String carboP = campoCarboP.getText().toString();
+        String hortBP = campoHortBP.getText().toString();
         refeicao.setNome(nome);
         refeicao.setHora(hora);
         refeicao.setPtn(ptn);
         refeicao.setCarbo(carbo);
         refeicao.setHortA(hortA);
         refeicao.setHortB(hortB);
+        refeicao.setPtnP(ptnP);
+        refeicao.setCarboP(carboP);
+        refeicao.setHortBP(hortBP);
         //  Refeicao refeicaoCriada = new Refeicao(nome, ptn, carbo, hortA, hortB);
         //para so atualizar return new Refeicao(nome, ptn, carbo, hortA, hortB);
     }
