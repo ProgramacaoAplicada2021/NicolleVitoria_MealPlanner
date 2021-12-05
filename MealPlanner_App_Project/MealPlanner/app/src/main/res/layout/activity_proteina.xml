@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.HortBActivity">
+    tools:context=".ui.activity.HortBActivity"
+    android:background="@drawable/fundosubs">
 
     <TextView
         android:id="@+id/texfdtView2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@color/fundo"
         android:text="Almôndega \n
 Atum em lata  \n
 Bacalhau \n
@@ -36,13 +39,17 @@ Picanha / rosbife \n
 Salmão / atum \n
 Sashimi \n
 Tofu \n"
-        android:textSize="20dp" />
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:layout_weight="1"
-        android:textSize="20dp"
+        android:background="@color/fundo"
         android:text="4 unidades (120g) \n
 1 lata \n
 5 csp (130g) \n
@@ -67,5 +74,8 @@ Tofu \n"
  \n4 fatias finas (120g)
  \n1 filé / posta (130g)
  \n15 peças
- \n250g" />
+ \n250g"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
 </LinearLayout>

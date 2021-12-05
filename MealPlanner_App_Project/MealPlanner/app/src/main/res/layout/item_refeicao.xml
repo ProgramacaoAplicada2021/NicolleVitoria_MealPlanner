@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="#90FFFFFF"
+    android:orientation="vertical">
 
     <TextView
-    android:id="@+id/item_refeicao_nome"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="26sp"
+        android:id="@+id/item_refeicao_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:textSize="26sp"
         android:textStyle="bold"
 
-    tools:text="Almoco"/>
-<!--    <TextView-->
-<!--        android:id="@+id/item_refeicao_hora"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="italic"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        tools:text="12h"/>-->
+        tools:text="Almoco" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/item_refeicao_hora"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="15sp"-->
+    <!--        android:textStyle="italic"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        tools:text="12h"/>-->
 
     <TextView
         android:id="@+id/item_refeicao_ptn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="italic"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
-        tools:text="frango - "/>
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="frango - " />
+
     <TextView
         android:id="@+id/item_refeicao_carbo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="italic"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
-        tools:text="arroz - "/>
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="arroz - " />
+
     <TextView
         android:id="@+id/item_refeicao_hortA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="italic"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
-        tools:text="alface - "/>
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="alface - " />
+
     <TextView
         android:id="@+id/item_refeicao_hortB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="italic"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="8dp"
-        tools:text="cenoura - "/>
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="cenoura - " />
 </LinearLayout>

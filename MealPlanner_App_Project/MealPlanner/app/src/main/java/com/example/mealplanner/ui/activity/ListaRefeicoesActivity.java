@@ -3,33 +3,26 @@ package com.example.mealplanner.ui.activity;
 import static com.example.mealplanner.ui.activity.ConstantesActivities.CHAVE_REFEICAO;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.example.mealplanner.ui.adapter.ListaRefeicoesAdapter;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.ContextMenu;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mealplanner.DAO.RefeicaoDAO;
 import com.example.mealplanner.R;
 import com.example.mealplanner.model.Refeicao;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.mealplanner.ui.adapter.ListaRefeicoesAdapter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 public class ListaRefeicoesActivity extends AppCompatActivity {
@@ -48,6 +41,17 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         configuraListaRefeicoes();
         //dao.salva(new Refeicao("almoco", "12h", "carne", "arroz", "salada", "cenoura", "carne", "arroz", "salada", "cenoura"));
         //dao.salva(new Refeicao("janta", "20h", "carne", "arroz", "salada", "cenoura"));
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+        // Define ColorDrawable object and parse color
+        // using parseColor method
+        // with color hash code as its parameter
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#0F9D58"));
+
+        // Set BackgroundDrawable
+        actionBar.setBackgroundDrawable(colorDrawable);
     }
 
 
