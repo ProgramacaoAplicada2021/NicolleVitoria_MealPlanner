@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/drawable/ic_nova_ref.xml" value="0.14290540540540542" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_aactivity.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_b.xml" value="0.1" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_hort_b_activity.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_lista_de_refeicoes.xml" value="0.22" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_login2.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_main.xml" value="0.17" />
         <entry key="..\:/Users/nicol/AndroidStudioProjects/MealPlanner/app/src/main/res/layout/activity_proteina.xml" value="0.12" />

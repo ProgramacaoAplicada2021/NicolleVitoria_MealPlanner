@@ -18,6 +18,10 @@ public class RefeicaoDAO {
         atualizaIds();
     }
 
+    private void atualizaIds() {
+        contadorDeids++;
+    }
+
     public void edita(Refeicao refeicao) {
         Refeicao refeicaoEncontrada = buscaRefeicaoPeloId(refeicao);
         if (refeicaoEncontrada != null) {
@@ -41,9 +45,7 @@ public class RefeicaoDAO {
 
         return new ArrayList<>(refeicoes);
     }
-    private void atualizaIds() {
-        contadorDeids++;
-    }
+
 
     public void remove(Refeicao refeicao) {
         Refeicao refeicaoDevolvida = buscaRefeicaoPeloId(refeicao);

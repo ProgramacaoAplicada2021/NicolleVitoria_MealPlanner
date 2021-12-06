@@ -3,9 +3,12 @@ package com.example.mealplanner.ui.activity;
 import static com.example.mealplanner.ui.activity.ConstantesActivities.CHAVE_REFEICAO;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.Menu;
@@ -42,6 +45,17 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
         inicializacaoDosCampos(); //onde entra cada atributo
         //configuraBotaoSalvar();
         carregaRefeicao();
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+        // Define ColorDrawable object and parse color
+        // using parseColor method
+        // with color hash code as its parameter
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#38A7D8"));
+
+        // Set BackgroundDrawable
+        actionBar.setBackgroundDrawable(colorDrawable);
     }
 
     @Override
@@ -112,10 +126,10 @@ public class AlimentosRefeicaoActivity extends AppCompatActivity {
         campoHortBP = findViewById(R.id.activity_formulario_refeicao_hortBP);
     }
 
-    private void salva(Refeicao refeicao) {
-        dao.salva(refeicao);
-        finish(); //retorna ´pra anterior
-    }
+//    private void salva(Refeicao refeicao) {
+//        dao.salva(refeicao);
+//        finish(); //retorna ´pra anterior
+//    }
 
     private void preencheRefeicao() {
         String nome = campoNome.getText().toString();

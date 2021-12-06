@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/fundosubs">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/nova_refeicao"
@@ -13,10 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:focusable="true"
         android:src="@drawable/ic_action_name"
-        android:focusable="true" />
+        app:backgroundTint="#38A7D8"
+        app:fabCustomSize="70dp"
+        app:fabSize="normal"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ListView
         android:id="@+id/activity_lista_de_refeicoes_listview"

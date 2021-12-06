@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ui.activity.HortBActivity"
     android:background="@drawable/fundosubs">
@@ -10,24 +11,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        android:layout_gravity="center_vertical"
-        android:text="\nAbóbora \n
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="\n\n\n\n\n\n\n\n\n\n\nAbóbora \n
 Chuchu \n
 Abobrinha \n
-Ervilha fresca \n"
-        android:textAlignment="center"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        android:text="\nBeterraba \n
+Ervilha fresca \n
+Beterraba \n
 Quiabo \n
 Cenoura \n
-Vagem \n"
+Vagem \n\n"
         android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
         tools:ignore="RtlCompat" />
 </LinearLayout>

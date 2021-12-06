@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
     android:background="@drawable/fundosubs"
+    android:orientation="vertical"
     tools:context=".ui.activity.SubstituicoesActivity">
+
     <TextView
         android:layout_width="150dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="20dp" />
@@ -19,13 +21,16 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Proteína" />
+        android:backgroundTint="#BAD86960"
+        android:text="Proteína"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/botao_carbo"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:backgroundTint="#F3E56D"
         android:text="Carboidrato"
         android:textAlignment="center"
         tools:ignore="RtlCompat" />
@@ -35,12 +40,14 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:backgroundTint="#AEEC68"
         android:text="Hortaliça A" />
 
     <Button
         android:id="@+id/botao_hortB"
         android:layout_width="150dp"
-        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#DAA557"
         android:text="Hortaliça B" />
 </LinearLayout>

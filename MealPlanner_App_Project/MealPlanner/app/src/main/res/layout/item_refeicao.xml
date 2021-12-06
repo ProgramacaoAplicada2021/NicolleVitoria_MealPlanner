@@ -13,7 +13,6 @@
         android:layout_marginStart="10dp"
         android:textSize="26sp"
         android:textStyle="bold"
-
         tools:text="Almoco" />
     <!--    <TextView-->
     <!--        android:id="@+id/item_refeicao_hora"-->

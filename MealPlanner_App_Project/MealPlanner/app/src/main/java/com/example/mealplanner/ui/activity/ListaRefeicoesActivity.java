@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -24,13 +25,13 @@ import com.example.mealplanner.model.Refeicao;
 import com.example.mealplanner.ui.adapter.ListaRefeicoesAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.List;
 
 public class ListaRefeicoesActivity extends AppCompatActivity {
 
-    public static final String TITULO_APPBAR = "Minhas refeições";
+    public static final String TITULO_APPBAR = "Minhas Refeições";
     private final RefeicaoDAO dao = new RefeicaoDAO();
     private ListaRefeicoesAdapter adapter;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         // using parseColor method
         // with color hash code as its parameter
         ColorDrawable colorDrawable
-                = new ColorDrawable(Color.parseColor("#0F9D58"));
+                = new ColorDrawable(Color.parseColor("#38A7D8"));
 
         // Set BackgroundDrawable
         actionBar.setBackgroundDrawable(colorDrawable);
@@ -70,21 +71,6 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
             remove(refeicaoEscolhida);
         }
         return super.onContextItemSelected(item);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_substituicao, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int itemId = item.getItemId();
-        if (itemId == R.id.activity_lista_de_refeicoes_substituicao) {
-            startActivity(new Intent(this, SubstituicoesActivity.class));
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     private void configuraFabNovaRefeicao() {
@@ -116,11 +102,9 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         ListView listaDeRefeicoes = findViewById(R.id.activity_lista_de_refeicoes_listview); //usar listadapter para implementacoes mais complexas
         configuraAdapter(listaDeRefeicoes); //preciso ir adicionando aq no codigo
         configuraListenerDeClickPorItem(listaDeRefeicoes);
-        //configuraListenerDeClickLongoPorItem(listaDeRefeicoes);
         registerForContextMenu(listaDeRefeicoes); //indica que a lista tem um registro de context menu
 
     }
-
 
     private void remove(Refeicao refeicao) {
         dao.remove(refeicao);
@@ -137,7 +121,6 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
             }
         });
     }
-
     private void abreFormularioModoEditaRefeicao(Refeicao refeicao) {
         Intent vaiParaAlimentosRefeicaoActivity = new Intent(ListaRefeicoesActivity.this, AlimentosRefeicaoActivity.class);
         vaiParaAlimentosRefeicaoActivity.putExtra(CHAVE_REFEICAO, refeicao);
@@ -149,4 +132,30 @@ public class ListaRefeicoesActivity extends AppCompatActivity {
         adapter = new ListaRefeicoesAdapter(this);
         listaDeRefeicoes.setAdapter(adapter);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_substituicao, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.activity_lista_de_refeicoes_substituicao) {
+            startActivity(new Intent(this, SubstituicoesActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

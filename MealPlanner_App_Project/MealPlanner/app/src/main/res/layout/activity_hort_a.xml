@@ -3,22 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ui.activity.HortBActivity"
     android:background="@drawable/fundosubs">
 
     <TextView
-        android:layout_width="201dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="20dp" />
-    <TextView
-        android:id="@+id/textVisdew4"
+        android:id="@+id/texfdtVityyuuesdfw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@color/fundo"
         android:text=" \nAgrião \n
 Alface \n
 Berinjela \n
@@ -27,33 +22,27 @@ Couve-flor \n
 Jiló \n
 Nirá  \n
 Pimentão  \n
-Rúcula"
-        android:textAlignment="center"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/texctView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:text=" \nAipo \n
+Rúcula\n
 Alho \n
 Bertalha  \n
 Chicória  \n
-Escarola  \n
-Maxixe  \n
-Palmito \n
-Rabanete \n
-Taioba \n"
+Escarola  \n"
         android:textAlignment="center"
+        android:textSize="20dp"
         tools:ignore="RtlCompat" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textVsdfjkiew2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:text=" \nAlcachofra \n
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@color/fundo"
+        android:text="Maxixe  \n
+Palmito \n
+Rabanete \n
+Taioba
+\nAlcachofra \n
 Almeirão \n
 Brócolis \n
 Cogumelos \n
@@ -63,5 +52,6 @@ Pepino \n
 Radicchio \n
 Tomate \n"
         android:textAlignment="center"
+        android:textSize="20dp"
         tools:ignore="RtlCompat" />
 </LinearLayout>

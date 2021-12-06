@@ -32,8 +32,8 @@ public class ListaRefeicoesAdapter extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int i) {
-        return refeicoes.get(i).getId();
+    public long getItemId(int posicao) {
+        return refeicoes.get(posicao).getId();
     }
 
     @Override
